@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: poppins;
+    box-sizing: border-box; 
 }
 
 header {
@@ -12,8 +13,8 @@ header {
     padding: 10px 0;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures navbar stays above other content */
-    width: 1470px;
+    z-index: 1000; 
+    width: 100%; 
 }
 
 header div a {
@@ -25,154 +26,102 @@ header div a {
 }
 
 header div a:hover {
-    background-color: #555; /* Adds hover effect for interactivity */
+    background-color: #555; 
 }
 
-header{
-    display: flex;
-    padding: 20px;
-    gap: 100px;
-    justify-content: end;
-}
-.top{
+.top {
     position: relative;
-    width: 1310px;
+    width: 100%; 
     height: 100vh;
-    background: url(building.jpg)no-repeat; 
+    background: url(building.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
     align-items: center;
-    padding: 80px 100px 0;
-    
+    padding: 0 20px; 
 }
 
-.text1{
+.text1 {
     color: rgb(252, 250, 250);
     text-align: center;
     font-size: 200%;
-    margin-left: 300px;
+    max-width: 800px; 
 }
 
-button{
+button {
     text-align: center;
     padding: 20px;
     background-color: red;
     color: white;
-}
-
-.about{
-    text-align: center;
-    padding: 30px;
-    margin-left: 500px;
-    max-width: 500px;
-    justify-content: center;
-}
-
-.image1{
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-}
-
-.image2{
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-    margin-top: 3%;
-}
-
-.icon1{
-    font-size: 30px;
-}
-
-.why-us{
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-    margin-top: 3%;
-    padding: 20px;
-}
-
-.sponsors{
-    display: flex;
-    margin-top: 3%;
-    gap: 100px;
-    justify-content: center;
-}
-
-/* 
-.contact{
-    position: relative;
-    width: 1310px;
-    height: 100vh;
-    background: url(building.jpg)no-repeat; 
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 100px 0;
-    opacity: 50%;
-    
-} */
-
-.contact{
-    justify-content: center;
-    margin-left: 280px;
-    margin-top: 50px;
-}
-.contact .cot {
-    flex: 1 1 45%;
-    max-width: 500px;
-    background: #fff;
-    padding: 50px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact .cot label {
-    font-weight: bold;
-    font-size: 16px;
-    color: #555;
-}
-
-.contact .cot input,
-.contact .cot textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.contact .cot textarea {
-    resize: vertical;
-    height: 120px;
-}
-
-.contact .cot .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: gray;
-    color: #060606;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    margin-top: 20px; 
 }
 
-.contact .cot .btn:hover {
-    background-color: red;
+.about {
+    text-align: center;
+    padding: 50px 20px; 
+    max-width: 800px;
+    margin: 0 auto; 
 }
 
-footer{
+.speakers {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.image1, .image2 {
     display: flex;
-    gap: 200px;
+    gap: 20px; 
     justify-content: center;
-    padding: 30px;
+    flex-wrap: wrap; 
+}
+
+.image1 div, .image2 div {
+    flex: 1 1 300px; 
+    max-width: 380px; 
+}
+
+.why-us {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    padding: 50px 20px; 
+    flex-wrap: wrap; 
+}
+
+.icon1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.sponsors {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    padding: 50px 20px; 
+    flex-wrap: wrap; 
+}
+
+.sponsors div {
+    flex: 1 1 300px; 
+    max-width: 300px; 
+}
+
+footer {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    padding: 50px 20px; 
     background-color: #333;
+    color: white;
+    flex-wrap: wrap;
+}
+
+footer div {
+    flex: 1 1 300px; 
+    max-width: 400px; 
+    text-align: center;
 }
